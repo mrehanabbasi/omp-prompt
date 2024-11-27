@@ -3,7 +3,8 @@ version: 3
 final_space: true
 console_title_template: "{{ .Shell }} in {{ .Folder }}"
 blocks:
-  - alignment: left
+  - type: prompt
+    alignment: left
     newline: true
     segments:
       - type: path
@@ -23,7 +24,8 @@ blocks:
           commit_icon: "@"
           fetch_status: true
 
-  - alignment: right
+  - type: rprompt
+    alignment: right
     overflow: hidden
     segments:
       - type: executiontime
@@ -34,7 +36,8 @@ blocks:
         properties:
           threshold: 5000
 
-  - alignment: left
+  - type: prompt
+    alignment: left
     newline: true
     segments:
       - type: text
