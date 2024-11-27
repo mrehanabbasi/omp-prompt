@@ -60,5 +60,5 @@ secondary_prompt:
   background: transparent
   template: "❯❯ "
 
-pallete:
+palette:
   grey: "#6c6c6c"
